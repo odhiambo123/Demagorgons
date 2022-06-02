@@ -5,9 +5,9 @@ Hello World
 
 
 
-my pizza parties
-always end with rats fighting
-I hate chucky cheese
+mountains are tiny
+but rivers are gigantic
+I haven't gone outside
 
 
 
