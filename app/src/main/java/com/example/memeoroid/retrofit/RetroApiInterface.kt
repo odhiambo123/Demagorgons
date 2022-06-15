@@ -12,7 +12,7 @@ interface RetroApiInterface {
 
     //singleton
     @GET("memes2.json")
-    suspend fun getAllTemplates() : Response<List<MemeTemplate>>
+    suspend fun getAllTemplates(): Response<List<MemeTemplate>>
 
     companion object {
         var BASE_URL = "https://jshev.github.io/"
@@ -24,5 +24,4 @@ interface RetroApiInterface {
             return retrofit.create(RetroApiInterface::class.java)
         }
     }
-
 }

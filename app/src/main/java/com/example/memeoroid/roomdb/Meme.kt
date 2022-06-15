@@ -10,5 +10,4 @@ import androidx.room.PrimaryKey
 data class Meme(@PrimaryKey(autoGenerate = true) var memeId:Int?,
                   var topText:String,
                   var bottomText:String,
-                  var image_description:String) {
-}
+                  var image_description:String)

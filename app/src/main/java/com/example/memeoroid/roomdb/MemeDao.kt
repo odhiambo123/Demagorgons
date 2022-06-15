@@ -11,14 +11,14 @@ interface MemeDao {
     fun insertFavorite(meme: Meme)
 
     // Read
-    @Query("SELECT * FROM memes ORDER BY memeId DESC")
-    fun selectAllFavorites() : LiveData<List<Meme>>
+    @Query("SELECT * FROM memes ORDER BY memeId DESC LIMIT :limit OFFSET :offset")
+    fun selectAllFavorites(limit:Int, offset : Int) : LiveData<List<Meme>>
 
-    @Query("SELECT * FROM memes WHERE memeId = :key")
-    fun selectFavorite(key: Int): LiveData<Meme>
+    @Query("SELECT * FROM memes WHERE memeId = :key ORDER BY memeId DESC LIMIT :limit OFFSET :offset")
+    fun selectFavorite(key: Int, limit:Int, offset : Int): LiveData<Meme>
 
-    @Query("SELECT * FROM memes WHERE topText LIKE :text OR bottomText LIKE :text")
-    fun search(text: String) : LiveData<List<Meme>>
+    @Query("SELECT * FROM memes WHERE topText LIKE :text OR bottomText LIKE :text ORDER BY memeId DESC LIMIT :limit OFFSET :offset")
+    fun search(text: String, limit:Int, offset : Int) : LiveData<List<Meme>>
 
     // Update
     @Update

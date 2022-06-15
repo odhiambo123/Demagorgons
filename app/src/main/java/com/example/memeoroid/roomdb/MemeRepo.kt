@@ -6,38 +6,37 @@ import androidx.lifecycle.LiveData
 // DB Data Repository
 // Near identical to the DAO
 // Like the DbViewModel, its job is to separate the data from the UI
-class MemeRepo(context: Context) {
-    var db:MemeDao? = AppDatabase.getInstance(context)?.memeDao()
+class MemeRepo(var dao : MemeDao ){
 
     // Create
     fun insertFavorite(meme: Meme) {
-        db?.insertFavorite(meme)
+        dao?.insertFavorite(meme)
     }
 
     // Read
-    fun selectAllFavorites() : LiveData<List<Meme>>? {
-        return db?.selectAllFavorites()
+    fun selectAllFavorites(limit: Int, offset: Int) : LiveData<List<Meme>>? {
+        return dao?.selectAllFavorites(limit, offset)
     }
 
-    fun selectFavorite(key: Int): LiveData<Meme>? {
-        return db?.selectFavorite(key)
+    fun selectFavorite(key: Int, limit :Int, offset: Int): LiveData<Meme>? {
+        return dao?.selectFavorite(key, limit , offset)
     }
 
-    fun search(text: String) : LiveData<List<Meme>>? {
-        return db?.search("%" + text + "%")
+    fun search(text: String, limit:Int, offset : Int) : LiveData<List<Meme>>? {
+        return dao?.search("%" + text + "%", limit, offset )
     }
 
     // Update
     fun updateFavorite(meme: Meme) {
-        db?.updateFavorite(meme)
+        dao?.updateFavorite(meme)
     }
 
     // Delete
     fun deleteFavorite(meme: Meme) {
-        db?.deleteFavorite(meme)
+        dao?.deleteFavorite(meme)
     }
 
     fun deleteAllFavorites() {
-        db?.deleteAllFavorites()
+        dao?.deleteAllFavorites()
     }
 }

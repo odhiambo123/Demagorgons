@@ -3,15 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Donna/RevProject2/app/src/main/res/layout/activity_favorites.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Jinal/AndroidStudioProjects/RevProject2/app/src/main/res/layout/activity_favorites.xml" value="0.1111111111111111" />
+        <entry key="..\:/Users/Jinal/AndroidStudioProjects/RevProject2/app/src/main/res/layout/activity_gallery.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/user/Desktop/Revature/RevProject2/app/src/main/res/layout/activity_custom_meme_display.xml" value="0.1" />
         <entry key="..\:/Users/user/Desktop/Revature/RevProject2/app/src/main/res/layout/activity_favorites.xml" value="0.13072916666666667" />
         <entry key="..\:/Users/user/Desktop/Revature/RevProject2/app/src/main/res/layout/activity_gallery.xml" value="0.15989583333333332" />
         <entry key="..\:/Users/user/Desktop/Revature/RevProject2/app/src/main/res/layout/activity_main.xml" value="0.13072916666666667" />
         <entry key="..\:/Users/user/Desktop/Revature/RevProject2/app/src/main/res/layout/activity_new.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/user/Desktop/Revature/RevProject2/app/src/main/res/layout/meme_list_item.xml" value="0.3605577689243028" />
         <entry key="..\:/Users/user/Desktop/Revature/RevProject2/app/src/main/res/layout/template_list_item.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_custom_meme_display.xml" value="0.2865447998046875" />
+        <entry key="app/src/main/res/layout/activity_favorites.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2576416015625" />
+        <entry key="app/src/main/res/layout/activity_new.xml" value="0.2891632080078125" />
+        <entry key="app/src/main/res/layout/activity_surfmemes.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_update.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/meme_list_item.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/template_list_item.xml" value="0.24166666666666667" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

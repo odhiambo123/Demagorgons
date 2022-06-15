@@ -6,5 +6,4 @@ data class MemeTemplate(var ID: Int,
                         var name: String,
                         var rank: Int,
                         var tags: String,
-                        var topText: String) {
-}
+                        var topText: String)

@@ -15,10 +15,7 @@ class ApiViewModel(val repo: TemplateRepo) : ViewModel() {
         job = CoroutineScope(Dispatchers.IO).launch {
             var res = repo.getAllTemplates()
             if (res.isSuccessful) {
-                println("Success!")
                 templateList!!.postValue(res.body())
-            } else {
-                println("Not successful!")
             }
         }
     }

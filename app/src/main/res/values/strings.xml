@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Memeoroid</string>
+    <string name="surf">Surf</string>
+    <string name="favorites">Favorites</string>
+    <string name="create_your_own">Create Your Own</string>
+    <string name="explore">Explore</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_add_to_fav">Update</string>
+    <string name="name">Name</string>
+    <string name="bottomtext">BottomText</string>
+    <string name="toptext">TopText</string>
+    <string name="not_funny">Not Funny?</string>
+    <string name="meme_description">Meme Description</string>
+    <string name="top_text">Top Text...</string>
+    <string name="bottom_text">Bottom Text...</string>
+    <string name="update">update</string>
+    <string name="cancel">cancel</string>
+    <string name="create">Create</string>
+    <string name="preview">Preview</string>
+    <string name="reset">Reset</string>
+    <string name="gallery">Gallery</string>
+    <string name="next">Next</string>
+    <string name="prevous">prevous</string>
+    <string name="search">Search...</string>
+    <string name="previous">Previous</string>
+    <string name="save">Save</string>
+    <string name="edit">edit</string>
+    <string name="load_more">Load More</string>
 </resources>

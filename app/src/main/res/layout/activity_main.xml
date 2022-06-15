@@ -1,18 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/landing_bottom_layer"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/landingImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/landing_mid_layer"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/surfMeme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/custom_button_round"
+        android:elevation="8dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/surf"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_round"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/favorites"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/createMeme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surfMeme" />
+
+    <Button
+        android:id="@+id/createMeme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_round"
+        android:backgroundTint="@color/black"
+        android:elevation="8dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/create_your_own"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/favorites" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
